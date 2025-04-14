@@ -1,0 +1,40 @@
+<!DOCTYPE html>         -> start of HTML5 document
+<html>                  -> root of HTML
+<head>                  -> head section starts
+
+<meta charset="utf-8">  -> defines character encoding
+<title>Page Title</title> -> sets title in browser tab
+
+</head>
+<body>                  -> body section starts
+
+<h1>...</h1>            -> main heading
+<h2>...</h2>            -> subheading
+<h3>...</h3>            -> smaller subheading
+
+<p>...</p>              -> paragraph
+
+<a href="...">...</a>   -> link
+<a target="_blank" href="...">...</a> -> link opens in new tab
+
+<img src="..." alt="..."> -> image
+
+<ul>                   -> unordered list
+  <li>...</li>         -> list item
+</ul>
+
+<ol>                   -> ordered list
+  <li>...</li>         -> list item
+</ol>
+
+<figure>               -> image container
+  <img src="..." alt="...">
+  <figcaption>...</figcaption>
+</figure>
+
+<main>...</main>       -> main content
+<section>...</section> -> content section
+<footer>...</footer>   -> footer area
+
+</body>
+</html>                -> end of HTML

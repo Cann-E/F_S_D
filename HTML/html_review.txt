@@ -1,0 +1,184 @@
+**HTML Basics**
+
+**Role of HTML**
+- Represents the content and structure of a web page.
+
+**HTML Elements**
+- Building blocks of an HTML document: headings, paragraphs, links, images, etc.
+- Syntax:
+  ```html
+  <elementName>Content goes here</elementName>
+  ```
+
+**Void Elements**
+- Have no content and only a start tag.
+- Examples: `<img>`, `<meta>`
+- Valid with or without trailing slash:
+  ```html
+  <img>
+  <img/>
+  ```
+
+**Attributes**
+- Placed in opening tag, provide extra info or behavior.
+- Syntax:
+  ```html
+  <element attribute="value"></element>
+  ```
+- Boolean attributes: `disabled`, `readonly`, `required` (true if present).
+
+**Comments**
+```html
+<!-- This is an HTML comment. -->
+```
+
+**Common HTML Elements**
+
+*Headings:*
+```html
+<h1> to <h6>
+```
+
+*Paragraphs:*
+```html
+<p>This is a paragraph element.</p>
+```
+
+*Images:*
+```html
+<img src="image_url" alt="description">
+```
+
+*Body:*
+```html
+<body> ... </body>
+```
+
+*Sections:*
+```html
+<section> ... </section>
+```
+
+*Divs:*
+```html
+<div> ... </div>
+```
+
+*Anchors:*
+```html
+<a href="url">link text</a>
+```
+
+*Lists:*
+```html
+<ul><li>...</li></ul>
+<ol><li>...</li></ol>
+```
+
+*Emphasis & Strong:*
+```html
+<em>text</em>
+<strong>text</strong>
+```
+
+*Figure & Figcaption:*
+```html
+<figure>
+  <img src="...">
+  <figcaption>caption</figcaption>
+</figure>
+```
+
+*Main & Footer:*
+```html
+<main> ... </main>
+<footer> ... </footer>
+```
+
+**Identifiers and Grouping**
+- IDs: unique (`id="title"`)
+- Classes: reusable (`class="box red-box"`)
+
+**Special Characters**
+- HTML entities: `&amp;`, `&lt;`, etc.
+
+**Linking Resources**
+- CSS:
+  ```html
+  <link rel="stylesheet" href="styles.css" />
+  ```
+- JavaScript:
+  ```html
+  <script src="script.js"></script>
+  ```
+
+**Boilerplate & Encoding**
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body> ... </body>
+</html>
+```
+
+**SEO and Social Sharing**
+- Meta description:
+  ```html
+  <meta name="description" content="..." />
+  ```
+- Open Graph:
+  ```html
+  <meta property="og:title" content="..." />
+  <meta property="og:type" content="..." />
+  <meta property="og:image" content="..." />
+  <meta property="og:url" content="..." />
+  ```
+
+**Media Elements and Optimization**
+- iframe:
+  ```html
+  <iframe src="url" title="..." allowfullscreen></iframe>
+  ```
+- Replaced elements: `iframe`, `video`, `embed`, `input type="image"`
+- Optimization: Use `WEBP`, `AVIF` formats, compress files
+- SVGs: Scalable without losing quality
+
+**Multimedia Integration**
+- Audio:
+  ```html
+  <audio src="file.mp3" controls loop muted></audio>
+  ```
+- Video:
+  ```html
+  <video src="file.mp4" controls loop muted poster="image.jpg"></video>
+  ```
+- Use `<source>` inside `<audio>`/`<video>` to support multiple formats
+
+**Target Attribute Values**
+- `_self`: current tab (default)
+- `_blank`: new tab/window
+- `_parent`: parent frame
+- `_top`: full window
+
+**Paths**
+- `/` (separator), `.` (current directory), `..` (parent directory)
+- Absolute path:
+  ```html
+  <a href="https://domain.com/path/file">Link</a>
+  ```
+- Relative path:
+  ```html
+  <a href="about.html">About</a>
+  ```
+
+**Link States (CSS)**
+- `:link`: default
+- `:visited`: after clicked
+- `:hover`: on mouse over
+- `:focus`: element in focus
+- `:active`: being clicked
+
