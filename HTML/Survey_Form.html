@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Survey Form</title>
+  <style>
+    #survey-form div {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="title">Survey from Head</h1>
+  <p id="description">Description for survey head</p>
+
+  <form id="survey-form">
+    <div>
+      <label for="name" id="name-label">Name:</label>
+      <input required type="text" id="name" placeholder="John Doe" size="20" />
+    </div>
+
+    <div>
+      <label for="email" id="email-label">Email:</label>
+      <input required type="email" id="email" placeholder="example@gmail.com" size="20" />
+    </div>
+
+    <div>
+      <label for="number" id="number-label">Age:</label>
+      <input type="number" id="number" placeholder="10 9 8..." min="1" max="100" />
+    </div>
+
+    <div>
+      <label for="dropdown">Rate us!</label><br>
+      <select id="dropdown">
+        <option value="1">Poor</option>
+        <option value="2">Good</option>
+        <option selected value="3">Excellent</option>
+      </select>
+    </div>
+
+    <div>
+      <label>Please Pick one!</label><br>
+      <input id="yes" type="radio" value="yes" name="radio-buttons" />
+      <label for="yes">Yes</label><br>
+
+      <input id="maybe" type="radio" value="maybe" name="radio-buttons" />
+      <label for="maybe">Maybe</label><br>
+
+      <input id="no" type="radio" value="no" name="radio-buttons" />
+      <label for="no">No</label><br>
+
+      <input id="other" type="radio" value="other" name="radio-buttons" />
+      <label for="other">Other</label>
+    </div>
+
+    <div>
+      <label>Please Check One!</label><br>
+      <input id="check1" type="checkbox" value="hey" />
+      <label for="check1">Check 1</label><br>
+
+      <input id="check2" type="checkbox" value="hey" />
+      <label for="check2">Check 2</label>
+    </div>
+
+    <div>
+      <label>2nd Check One!</label><br>
+      <input id="2ndcheck" type="checkbox" value="hey2" />
+      <label for="2ndcheck">2nd</label><br>
+
+      <input id="3rdcheck" type="checkbox" value="hey3" />
+      <label for="3rdcheck">3rd</label>
+    </div>
+
+    <div>
+      <label for="comments">Please Leave Comments!</label><br>
+      <textarea id="comments" name="comments" placeholder="Great..." rows="4" cols="40"></textarea>
+    </div>
+
+    <div>
+      <button id="submit" type="submit">Submit</button>
+    </div>
+  </form>
+</body>
+</html>
